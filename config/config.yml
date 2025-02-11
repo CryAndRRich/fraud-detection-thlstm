@@ -1,0 +1,25 @@
+# Model configuration
+model:
+  input_dim: 29
+  hidden_dim: 64
+  output_dim: 2
+  batch_size: 1000
+
+# Training configuration
+training:
+  learning_rate: 0.001
+  number_of_epochs: 100
+  dropout_rate: 0.8
+  optimizer: "adam"
+  loss: "cross_entropy"            # Use cross-entropy loss function
+  save_best_checkpoint: true       # Save checkpoint when the lowest loss is reached
+
+# Directory configuration
+directories:
+  data_dir: "data/"                # Directory containing the dataset
+  model_dir: "models/"             # Directory to store trained models
+  checkpoint_dir: "saved_models/"  # Directory to save model checkpoints
+
+# Device configuration
+device:
+  use_gpu: true                    # Set to true to use GPU, false to use CPU

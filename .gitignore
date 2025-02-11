@@ -1,0 +1,16 @@
+__pycache__/
+
+*.pth
+!saved_models/*.pth
+
+*.csv
+*.xls*
+!data/*.csv
+!data/*.xls*
+
+*.jpg
+*.png
+*.tif
+*.svg
+
+.vscode/
